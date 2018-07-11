@@ -44,7 +44,7 @@ class PostModelTest(TestCase):
         self.assertContains(response,'Blog post body')
 
     def test_post_create_form_view(self):
-        response = self.client.get(reverse('post_new'),{
+        response = self.client.post(reverse('post_new'),{
             'title': 'New title',
             'body': 'New text',
             'author': self.user,
@@ -52,11 +52,10 @@ class PostModelTest(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, 'New title')
         self.assertContains(response, 'New text')
-        self.assertContains(response, self.user)
 
     def test_post_update_form_view(self):
         response = self.client.post(reverse('post_edit', args='1'), {
-            'title': 'Ipdated title',
+            'title': 'Updated title',
             'body': 'Updated body',
             })
         self.assertEqual(response.status_code, 302)
