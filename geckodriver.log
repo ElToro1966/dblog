@@ -126,3 +126,10 @@
 1531495834429	addons.productaddons	WARN	Failed downloading XML, status: 0, reason: error
 1531495834439	addons.productaddons	WARN	Failed downloading via XHR, status: 0, reason: error
 [Parent 1895, Gecko_IOThread] WARNING: pipe error (73): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1533111028433	geckodriver	INFO	geckodriver 0.20.1
+1533111028442	geckodriver	INFO	Listening on 127.0.0.1:54605
+1533111029433	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.vGYuwistYzF3"
+1533111030981	Marionette	INFO	Listening on port 42455
+1533111031040	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 32113, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-oscv9o/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
